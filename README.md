@@ -8,10 +8,10 @@
     Download the qa_index.ann and qa_data.json files.
     Place these files into the NLP_PROJECT/Project folder.
 
-3. cd NLP_PROJECT/Project
+3. pip install -r requirements.txt
 
-4. pip install -r requirements.txt
-
+4. cd NLP_PROJECT/Project
+ 
 5. python nlpproject.py
 
 6. Open http://127.0.0.1:5000  or Localhost on your system.
