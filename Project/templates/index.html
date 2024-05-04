@@ -139,8 +139,6 @@
                 {% endfor %}
             {% endif %}
         </div>
-            
-    <!-- Place this after the results div -->
 <div id="feedbackForm" class="feedback-section mt-5 py-4 px-3" style="display:none;">
     <h3 class="text-center mb-3">Was this information helpful?</h3>
     <form id="feedbackTextForm" onsubmit="submitTextFeedback(event)">
@@ -191,7 +189,7 @@
                 document.getElementById('loader').classList.add('hidden');
             });
         });
-        var feedbackShown = false; // Track if feedback is already shown
+        var feedbackShown = false; 
 
 function toggleAnswer(index) {
     var answerElement = document.getElementById('answer' + index);
@@ -199,14 +197,14 @@ function toggleAnswer(index) {
         answerElement.classList.remove('hidden');
         if (!feedbackShown) {
             document.getElementById('feedbackForm').style.display = 'block';
-            feedbackShown = true; // Ensure the form is shown only once
+            feedbackShown = true; 
         }
     } else {
         answerElement.classList.add('hidden');
     }
 }
 
-
+//Submit feedback Function 
 
 function submitTextFeedback(event) {
     event.preventDefault();
